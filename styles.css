@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
+  padding: 10px 0;
+}
+header .navbar {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .navbar .logo {
+  color: #c72092;
+  font-size: 25px;
+  cursor: pointer;
+}
+header .navbar span {
+  text-decoration: underline;
+  color: #6c14d0;
+}
+header .navbar .navlinks {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .navbar .navlinks li {
+  list-style: none;
+  margin: 10px;
+}
+header .navbar .navlinks li a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+}
+header .navbar .navlinks li a:hover {
+  color: #6c14d0;
+}
+header .navbar .icon {
+  color: black;
+}
+header .navbar .icon:hover {
+  color: #c72092;
+}/*# sourceMappingURL=styles.css.map */
