@@ -125,7 +125,7 @@ header .navbar .icons .fa-solid:hover {
   color: #6c14d0;
 }
 
-button {
+.main-pgBtn {
   position: absolute;
   padding: 10px;
   display: flex;
@@ -138,13 +138,48 @@ button {
   height: 40px;
   background: linear-gradient(to right, #c72092, #6c14d0);
 }
-button:hover .fa-angle-right {
+.main-pgBtn:hover .fa-angle-right {
   transform: translateX(5px);
 }
-button h3 {
+.main-pgBtn h3 {
   color: white;
 }
-button .fa-angle-right {
+.main-pgBtn .fa-angle-right {
   color: white;
   transition: 0.3s;
+}
+
+.products .product-title {
+  font-size: 70px;
+  margin-top: 80px;
+  color: #6c14d0;
+  text-align: center;
+}
+.products .product-list {
+  background-color: #c72092;
+  display: flex;
+  padding: 20px 10%;
+}
+.products .product-list .product-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-basis: 20%;
+  height: 400px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px rgba(108, 20, 208, 0.3), -2px -2px 2px rgba(108, 20, 208, 0.3);
+}
+.products .product-list .product-description {
+  width: 60%;
+  text-align: center;
+}
+.products .product-list .side-button {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  left: 10%;
+  top: 10%;
+  gap: 5px;
 }/*# sourceMappingURL=styles.css.map */
