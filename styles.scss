@@ -167,6 +167,7 @@ header {
 }
 
 //*Products section
+
 .products {
   .product-title {
     font-size: 70px;
@@ -176,38 +177,70 @@ header {
   }
 
   .product-list {
-    background-color: #c72092;
     display: flex;
-    // align-items: flex-start;
-    // justify-content:flex-start;
-    padding: 20px 10% ;
-    
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px 0;
+    padding: 20px 10%;
+
     .product-container {
       position: relative;
       display: flex;
+      flex-basis: 22%;
       align-items: center;
       justify-content: center;
       flex-direction: column;
-      flex-basis: 20%;
-      height: 400px;
-      // flex-wrap: wrap;
+      gap: 20px;
+      height: 500px;
       border-radius: 5px;
-      box-shadow: 2px 2px 2px rgb(108, 20, 208, 0.3),
-        -2px -2px 2px rgb(108, 20, 208, 0.3);
-    }
+      box-shadow: 5px 5px 10px rgb(108, 20, 208, 0.3),
+        -5px -5px 10px rgb(108, 20, 208, 0.3);
+      padding: 10px;
+      transition: 0.3s;
+      &:hover {
+        transform: scale(1.1);
+      }
+      img {
+        width: 50%;
+        height: 30%;
+        cursor: pointer;
+      }
+      .product-description {
+        width: 80%;
+        text-align: center;
+      }
+      .product-price {
+        font-weight: 700;
+      }
 
-    .product-description {
-      width: 60%;
-      text-align: center;
-    }
+      .product-star {
+        color: gold;
+        cursor: pointer;
+      }
+      .product-button {
+        padding: 7px 15px;
+        color: white;
+        background: linear-gradient(to right, $primaryColor, $secondaryColor);
+        border: transparent;
+        cursor: pointer;
+      }
 
-    .side-button {
-      position: absolute;
-      display: flex;
-      flex-direction: column;
-      left: 10%;
-      top: 10%;
-      gap: 5px;
+      .side-button {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        left: 10%;
+        top: 10%;
+        gap: 5px;
+
+        .fa-heart,
+        .fa-share {
+          padding: 10px;
+          border: 1px solid black;
+          border-radius: 5px;
+          cursor: pointer;
+        }
+      }
     }
   }
 }
