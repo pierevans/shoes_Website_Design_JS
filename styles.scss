@@ -197,10 +197,17 @@ header {
         -5px -5px 10px rgb(108, 20, 208, 0.3);
       padding: 10px;
       transition: 0.3s;
-      &:hover {
+      &:hover img{
         transform: scale(1.1);
       }
+      &:hover .side-button {
+        visibility: visible;
+        opacity: 1;
+        transform: translateX(50%);
+
+      }
       img {
+        transition: 0.3s;
         width: 50%;
         height: 30%;
         cursor: pointer;
@@ -212,7 +219,7 @@ header {
       .product-price {
         font-weight: 700;
       }
-
+      
       .product-star {
         color: gold;
         cursor: pointer;
@@ -224,15 +231,18 @@ header {
         border: transparent;
         cursor: pointer;
       }
-
+      
       .side-button {
+        transition: 0.3s ease-in-out;
+        opacity: 0;
+        visibility: hidden;
         position: absolute;
         display: flex;
         flex-direction: column;
-        left: 10%;
+        left: 5%;
         top: 10%;
         gap: 5px;
-
+        
         .fa-heart,
         .fa-share {
           padding: 10px;

@@ -176,10 +176,16 @@ header .navbar .icons .fa-solid:hover {
   padding: 10px;
   transition: 0.3s;
 }
-.products .product-list .product-container:hover {
+.products .product-list .product-container:hover img {
   transform: scale(1.1);
 }
+.products .product-list .product-container:hover .side-button {
+  visibility: visible;
+  opacity: 1;
+  transform: translateX(50%);
+}
 .products .product-list .product-container img {
+  transition: 0.3s;
   width: 50%;
   height: 30%;
   cursor: pointer;
@@ -203,10 +209,13 @@ header .navbar .icons .fa-solid:hover {
   cursor: pointer;
 }
 .products .product-list .product-container .side-button {
+  transition: 0.3s ease-in-out;
+  opacity: 0;
+  visibility: hidden;
   position: absolute;
   display: flex;
   flex-direction: column;
-  left: 10%;
+  left: 5%;
   top: 10%;
   gap: 5px;
 }
